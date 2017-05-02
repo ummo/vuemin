@@ -1,11 +1,11 @@
-##1. 开发环境部署
+## 1. 开发环境部署
     $ npm install vuemin -g  # 全局安装vuemin
     $ vuemin xxx             # 创建vuemin项目到xxx文件夹下
     $ cd xxx                 # 进入xxx目录
     $ npm install            # 安装开发依赖包
     $ npm run dev            # 启动webpack-dev-server
 
-##2. 目录结构
+## 2. 目录结构
     src  
     ├── js           # javascript文件
         ├── config   # 框架所需的配置文件
@@ -21,7 +21,7 @@
     ├── sass         # 样式文件
     └── index.html   # 入口html文件
 
-##3. 路由配置
+## 3. 路由配置
 在src/js/config/router.js中配置，具体参数如下：
 
 | 参数名        | 值（举例）    | 功能                |是否必填 |
@@ -30,7 +30,7 @@
 | component     | HOME          | 引入具体页面vue文件 |是       |
 | auth          | 'AUTH_HOME'   | 路由权限            |否       |
 
-##4. 菜单配置
+## 4. 菜单配置
 菜单包括左侧主菜单和头部次级菜单，统一在src/js/config/nav.js中配置，具体参数如下：
 
 | 参数名        | 值（举例）             | 功能                                                 |是否必填     |
@@ -42,17 +42,17 @@
 | children      | 与父节点结构相同的对象 | 子菜单                                               |否           |
 | end           | true                   | 该参数之后的children由<br>左侧主菜单转到头部次级菜单 |否           |
 
-##5. 接口配置
+## 5. 接口配置
 项目中所有的接口地址统一在src/js/config/api.js中管理。<br>
 开头为'/mock/'的接口会直接读取mock文件夹下的假接口文件。<br>
 其他的接口会走webpack-dev-server代理，更改代理的配置在根目录下webpack.config.development.js文件中修改。
 
-##6. filter配置
+## 6. filter配置
 filter是在每次路由跳转页面渲染之前进行的一系列的校验。<br>
 所有的filter会按照src/js/config/filter.js中所定义的顺序顺序执行。
 
-##7. ajax请求
-###7.1 ajax默认参数配置
+## 7. ajax请求
+### 7.1 ajax默认参数配置
 
 ajax请求的默认参数在src/js/config/ajax.js中配置，具体参数如下：
 
@@ -63,10 +63,10 @@ ajax请求的默认参数在src/js/config/ajax.js中配置，具体参数如下�
 | responseType  | json      | 返回数据格式                              |是       |
 | beforeSuccess | 函数      | 请求成功之前的处理<br>通常用作错误码处理  |是       |
 
-###7.2 错误码字典配置
+### 7.2 错误码字典配置
 在src/js/config/ajaxcode.js中配置
 
-###7.3 ajax方法的使用
+### 7.3 ajax方法的使用
 业务逻辑中调用ajax方法时使用Util.ajax方法，具体参数如下：
 
 | 参数名        | 值（举例）| 功能                                     |是否必填 |

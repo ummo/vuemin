@@ -8,7 +8,6 @@ import Layout from './layout/index.vue'
 import VueHighcharts from 'vue-highcharts'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
-import '../assets/font-awesome/scss/font-awesome.scss'
 import '../sass/index.scss'
 Vue.use(VueRouter)
 Vue.use(VueHighcharts)

@@ -1,9 +1,9 @@
 ## 1. 开发环境部署
-    $ npm install vuemin -g  # 全局安装vuemin
-    $ vuemin xxx             # 创建vuemin项目到xxx文件夹下
-    $ cd xxx                 # 进入xxx目录
-    $ npm install            # 安装开发依赖包
-    $ npm run dev            # 启动webpack-dev-server
+    $ npm install vue-cli -g            # 全局安装官方vue-cli工具
+    $ vue init yangjiewu/vuemin xxx     # 创建vuemin项目到xxx文件夹下
+    $ cd xxx                            # 进入xxx目录
+    $ npm install                       # 安装开发依赖包
+    $ npm run dev                       # 启动webpack-dev-server
 
 ## 2. 目录结构
     src  
